@@ -49,7 +49,7 @@ module.exports = {
             res.redirect("/");
         })
         .catch(error=>{
-            res.send('Fijate esto master:' + error);
+            res.send('Ocurrio un error:' + error);
         });
     }
 
