@@ -19,7 +19,7 @@ module.exports = {
 
     upload: function (req, res) {
         db.Nota.update({
-                titulo: req.body.tittle,
+                titulo: req.body.title,
                 texto: req.body.message
             },{
             where:{
@@ -33,7 +33,7 @@ module.exports = {
 
     create: function (req, res) {
                 db.Nota.create({
-            titulo: req.body.tittle,
+            titulo: req.body.title,
             texto: req.body.message
         })
         .then( function () {

@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const methodOverride = require('method-override');
-const notasRouter = require('./routes/notasRouter');
+const notasRouter = require('./router/notasRouter');
  
 
 app.use(express.urlencoded({ estended: false }));
